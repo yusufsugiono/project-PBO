@@ -61,9 +61,9 @@ class Piano(GridLayout):
                self.Sound(index)
                Clock.schedule_once(self.my_callback, 0.2)
 
-class SoundPadApp(App):
+class PianoApp(App):
      def build(self):
          return Piano()
 
 if __name__ == '__main__':
-    SoundPadApp().run()
+    PianoApp().run()
